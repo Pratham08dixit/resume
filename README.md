@@ -124,19 +124,6 @@ The application uses a **multi-agent AI system** powered by CrewAI:
 - **Task**: Provide job search guidance
 - **Output**: Personalized career advice and strategies
 
-## 📁 Project Structure
-
-```
-resume-analyzer/
-│
-├── main.py                 # Main Streamlit application
-├── requirements.txt        # Python dependencies
-├── .env.example           # Environment variables template
-├── .env                   # Your API keys (create this)
-├── README.md              # This file
-└── improved_resume.docx   # Generated improved resume (auto-created)
-```
-
 ## 🔧 Configuration
 
 ### Environment Variables
