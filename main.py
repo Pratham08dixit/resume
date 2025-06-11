@@ -218,15 +218,3 @@ with st.sidebar:
     4. Download your improved resume
     5. Follow the job search guidance
     """)
-
-    st.header("🔧 Setup")
-    st.write("""
-    **For Streamlit Cloud:**
-    Add `GEMINI_API_KEY` to your app secrets
-
-    **For Local Development:**
-    Create a `.env` file with:
-    ```
-    GEMINI_API_KEY=your_api_key_here
-    ```
-    """)
