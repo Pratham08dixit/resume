@@ -1,8 +1,5 @@
 streamlit
 python-docx
 pymupdf
-crewai
-crewai-tools
 python-dotenv
-langchain
-langchain-google-genai
+google-generativeai
