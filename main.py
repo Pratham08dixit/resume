@@ -15,7 +15,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 # SERPER_API_KEY = os.getenv("SERPER_API_KEY")  # Temporarily disabled
 
 if not GEMINI_API_KEY:
-    st.error("⚠️ Missing GEMINI_API_KEY in .env file")
+    st.error("Missing GEMINI_API_KEY in .env file")
     st.stop()
 
 # os.environ["SERPER_API_KEY"] = SERPER_API_KEY  # Temporarily disabled
@@ -46,12 +46,12 @@ def save_docx(text, output_path):
     doc.save(output_path)
 
 # Streamlit UI
-st.title(" Resume Analyzer & Job Finder (Gemini 1.5 Flash)")
-st.caption("Multi-agent AI system using CrewAI + Gemini")
+st.title(" Resume Analyzer & Job Finder ")
+#st.caption("Multi-agent AI system using CrewAI + Gemini")
 
 uploaded_file = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"])
 #location = st.text_input("Preferred Job Location", value="New Delhi")
-run_button = st.button("🚀 Analyze & Find Jobs")
+run_button = st.button("🚀 Analyze")
 
 if run_button and uploaded_file :
     st.info("⏳ Processing your resume...")
